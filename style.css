@@ -1,0 +1,68 @@
+html {
+    font-size: 110%;
+}
+
+body {
+    font-family: monospace;
+    margin: auto;
+    max-width: 50rem;
+    padding: 1.25rem;
+}
+
+h2:before {
+  content: "> ";
+}
+
+/* Inline footnotes */
+details {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+details.links-toggle {
+    display: inline;
+    border: none;
+    padding: 0;
+}
+
+details.links-toggle > summary {
+    display: inline;
+    list-style: none;
+    cursor: pointer;
+    vertical-align: super;
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #001fd6;
+}
+
+details.links-toggle > summary:hover {
+    text-decoration: underline;
+}
+
+details.links-toggle > summary::-webkit-details-marker {
+    display: none;
+}
+
+details.links-toggle > summary::after {
+    content: "[+]";
+}
+
+details.links-toggle[open] > summary::after {
+    content: "[–]";
+}
+
+details.links-toggle[open] .links {
+    display: block;
+    margin: 0.3em 0 0.4em 1.5em;
+    font-size: 0.9em;
+    color: #888;
+}
+
+.figure-small {
+    float: right;
+}
+
+.figure-big {
+    margin: auto;
+    text-align: center;
+}
